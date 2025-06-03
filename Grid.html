@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3 Column CSS Grid Sample</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      padding: 24px;
+      background: #fe0000;
+      min-height: 100vh;
+    }
+    .grid-item {
+      background: #003cff;
+      border: 1px solid #000000;
+      padding: 32px;
+      text-align: center;
+      font-size: 1.2em;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .grid-item h2 {
+      margin: 12px 0 8px 0;
+      font-size: 1.3em;
+      color: #ffffff;
+    }
+    .grid-item p {
+      color: #ffffff;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>GitHub</h2>
+      <p>Host and review code, manage projects, and build software alongside millions of developers.</p>
+
+    </div>
+    <div class="grid-item">
+      <h2>JavaScript</h2>
+      <p>The programming language of the web. Create interactive websites and dynamic web apps.</p>
+    </div>
+    <div class="grid-item">
+      <h2>Markdown</h2>
+      <p>Write using an easy-to-read, easy-to-write plain text format, then convert it to HTML.</p>
+    </div>
+  </div>
+</body>
+</html>
